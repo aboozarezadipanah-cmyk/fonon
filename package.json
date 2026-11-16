@@ -1,15 +1,19 @@
 
 {
-  "name": "fonon",
+  "name": "fonoon-app",
   "version": "1.0.0",
-  "description": "Fonon AI Exam Server",
-  "main": "server.js",
+  "private": true,
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/android": "^6.1.2",
     "@anthropic-ai/sdk": "^0.39.0",
     "cors": "^2.8.5",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
   }
 }
