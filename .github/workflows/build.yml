@@ -26,7 +26,10 @@ jobs:
 
       - name: Install packages
         run: npm install
-
+      - name: Sync web files
+        run: |
+          mkdir -p www
+          cp index.html style.css app.js www/
       - name: Add Android
         run: |
           npx cap add android
